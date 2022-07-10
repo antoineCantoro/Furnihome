@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1d1d1d;
+    color: white;
+    position: relative;
+
+}
+
+html {
+    font-size: calc(100vw / 728 * 10);
+}
+
+// Header
+header {
+    padding: 2.2rem 3.1rem 4rem 4rem;
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+    width: fit-content;
+
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.header-logo {
+    height: 2.6rem;
+}
+
+
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4.7rem;
+}
+
+
+
+nav {
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2.2rem;
+        padding-left: 1.1rem;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        font-size: 1rem;
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 0.04em;
+
+        span {
+            display: inline-block;
+            text-align: center;
+            width: 2.2rem;
+            border-radius: 99px;
+            border: solid 1px white;
+        }
+    }
+}
+
+// Hero
+.hero-section {
+    background-image: url("./images/hero.png");
+    background-size: cover;
+}
+.hero-title {
+
+    padding-top: 19rem;
+    padding-left: 20rem;
+
+    span {
+        font-size: 2rem;
+        margin-bottom: 0.7rem;
+    }
+}
+
+.hero-play {
+    width: 9rem;
+    height: 9rem;
+}
+
+.hero-slider {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+
+    padding-top: 5.2rem;
+    padding-left: 5.2rem;
+    padding-bottom: 3rem;
+
+    li {
+        list-style: none;
+        border-radius: 5px;
+        overflow: hidden;
+        border: solid 2px white;
+        width: 10rem;
+        height: 7rem;
+
+        img {
+            height: auto;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}
+
+.hero-play {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+// Chair 
+.chair-section {
+    position: relative;
+
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+}
+
+//detail-card
+.detail-card {
+    width: 10rem;
+    color: #2C2C2C;
+    background-color: white;
+    border-radius: 0.2rem;
+    padding: 0.8rem 1.1rem;
+
+    &__title {
+        font-size: 0.8rem;
+    }
+    &__content {
+        font-size: 0.6rem;
+        opacity: 0.38;
+    }
+
+    &:first-of-type {
+        position: absolute;
+        left: 23rem;
+        top: 8rem;
+    }
+    &:last-of-type {
+        position: absolute;
+        left: 44rem;
+        top: 8.8rem;
+    }
+}
+
+//
+
+.product-card {
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-17.2rem);
+    color: #2C2C2C;
+    width: 17.2rem;
+
+
+    &__price {
+        font-size: 2.5rem;
+        font-weight: 600;
+
+        span {
+            font-size: 1.5rem;
+        }
+    }
+
+    & > img {
+        width: 100%;
+        display: block;
+    }
+
+    div {
+        background-color: white;
+        // width: ;
+        padding: 2.5rem;
+        width: 100%;
+    }
+
+    p {
+        font-size: 0.6rem;
+        color: #2C2C2C;
+        opacity: 0.38;
+    }
+    a {
+        text-decoration: none;
+        color: #2C2C2C;
+
+        img {
+            filter: invert(1);
+            width: 2.6rem;
+            margin-left: 0.6rem;
+            transform: translateY(25%);
+        }
+    }
+}
+
+
+// Section 3 : Sofa Section
+.sofa-section {
+    position: relative;
+    text-align: center;
+
+    & > img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+
+        h3 {
+            font-size: 2.5rem;
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.04em;
+            color: #D9D9D9;
+        }
+    
+        p {
+            font-size: 0.8rem;
+            letter-spacing: 0.04em;
+            margin-bottom: 2.4rem;
+            color: #D9D9D9;
+        }
+    
+        a {
+            text-decoration: none;
+            color: white;
+    
+            img {
+                width: 2.6rem;
+                margin-left: 0.8rem;
+                transform: translateY(30%);
+            }
+        }
+    }
+    
+    
+}
